@@ -1,0 +1,9 @@
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = [
+    "integration: 真实调用外部服务的集成测试",
+]
+
+[tool.ruff]
+line-length = 88

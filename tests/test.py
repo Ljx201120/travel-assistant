@@ -1,6 +1,6 @@
 # tests/test_trip_planner.py
 from src.core.agents.tripPlannerAgent import TripPlannerAgent
-from src.model.tripPlan import TripPlanRequest
+from src.core.models.tripPlan import TripPlanRequest
 from datetime import date
 
 

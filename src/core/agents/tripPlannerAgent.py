@@ -4,7 +4,7 @@ from src.core.agents.attractionSearchAgent import ATTRACTION_AGENT_PROMPT
 from src.core.agents.weatherQueryAgent import WEATHER_AGENT_PROMPT
 from src.core.agents.hotelAgent import HOTEL_AGENT_PROMPT
 from src.core.agents.plannerAgent import PLANNER_AGENT_PROMPT
-from src.model.tripPlan import TripPlanRequest, TripPlan
+from src.models.tripPlan import TripPlanRequest, TripPlan
 from src.core.tools.mcpClient import AmapMCPClient
 
 
