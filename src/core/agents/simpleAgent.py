@@ -63,7 +63,11 @@ class SimpleAgent:
         if not match:
             return None
         tool_name = match.group(1)
-        params = dict(p.split("=") for p in match.group(2).split(","))
+        params = {}
+        for p in match.group(2).split(","):
+            parts = p.split("=", 1)  # 最多分割一次，防止值里含有 =
+            if len(parts) == 2:
+                params[parts[0].strip()] = parts[1].strip()
         return {"tool": tool_name, "params": params}
 
     def __repr__(self):

@@ -40,7 +40,7 @@ PLANNER_AGENT_PROMPT = """你是行程规划专家。
           "description": "明清皇家宫殿，世界文化遗产",
           "category": "古迹",
           "rating": 4.8,
-          "image_url": "https://example.com/gugong.jpg",
+          "image_url": null,
           "ticket_price": 60
         }
       ],
@@ -90,6 +90,7 @@ PLANNER_AGENT_PROMPT = """你是行程规划专家。
 - `budget` 中的各个 `total_*` 为整数（单位元），`total` 为各项总和。
 - 所有数字类型不要加单位。
 - 只输出纯 JSON，不要包含 Markdown 代码块标记（不要 ```json 开头和结尾）。
+- `image_url` 必须为 null，不要填写任何URL。
 """
 
 # PLANNER_AGENT_PROMPT = """你是行程规划专家。
@@ -162,4 +163,5 @@ PLANNER_AGENT_PROMPT = """你是行程规划专家。
 # - accommodation.price 必须是纯数字
 # - budget 下所有 total 必须是纯数字
 # - 只输出 JSON，不要有任何前缀或后缀文字
+# - `image_url` 必须为 null，不要填写任何URL。
 # """
