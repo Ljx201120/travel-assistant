@@ -53,8 +53,6 @@ class TripPlannerAgent:
         import json
         import re
 
-        print("=== LLM 原始返回 ===")
-        print(response)
         response = response.strip()
         if not response:
             raise ValueError("Empty response")
